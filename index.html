@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cosas/fuente.css">
+    <title>Te amo Mariana</title>
+    <style>
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(251, 177, 170);
+            overflow: hidden;
+            position: relative;
+            flex-direction: column;
+            transition: background-color 0.1s;
+            
+        }
+
+        #botonConfeti {
+            position: absolute;
+            bottom: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .confetti {
+            position: absolute;
+            bottom: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: subirConfeti 2s ease-out forwards, epilepsiaConfeti 0.1s infinite alternate;
+        }
+
+        @keyframes subirConfeti {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(var(--movimiento-x));
+                opacity: 0;
+            }
+        }
+
+        @keyframes epilepsiaConfeti {
+            0% { background-color: red; }
+            25% { background-color: yellow; }
+            50% { background-color: blue; }
+            75% { background-color: green; }
+            100% { background-color: purple; }
+        }
+
+        /* Mensaje animado */
+        .mensaje {
+            position: absolute;
+            bottom: -50px; /* Aparece fuera de la pantalla */
+            left: 30px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 10px black;
+            animation: subirMensaje 2s ease-out forwards;
+        }
+
+        @keyframes subirMensaje {
+            0% {
+                bottom: -50px;
+                opacity: 0;
+            }
+            100% {
+                bottom: 85%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes epilepsiaFondo {
+            0% { background-color: rgb(251, 177, 170); color: lightcoral; }
+            100% { background-color: lightcoral; color: rgb(251, 177, 170); }
+        }
+        
+
+
+        .escribir2{
+            opacity: 0;
+            font-size: 40px;
+        }
+
+        @keyframes parpadeo {
+            50% { border-color: transparent; }
+        }
+
+
+        .heart {
+            position: absolute;
+            bottom: 0;
+            font-size: 24px;
+            color: red;
+            animation: rise 5s linear infinite;
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+
+        @media screen and (max-width: 768px) {
+            p{
+                font-size: 50px;
+                margin: 50px 0px 30px 0px;
+            }
+            #yes{
+                font-family: san;
+                width: 100px;
+                height: 30px;
+                border: none;
+                border-radius: 10px;
+                background-color: lightgreen;
+                overflow: hidden;
+                margin: 0px 20px;
+                transition: 1s;
+            }
+            #no{
+                font-family: san;
+                width: 100px;
+                height: 30px;
+                border: none;
+                border-radius: 10px;
+                background-color: lightcoral;
+                overflow: hidden;
+            }
+            .globos{
+                display: flex;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+            }
+            .corazones{
+                display: flex;
+                justify-content: center;
+                position: fixed;
+                bottom: 0;
+            }
+            #div{
+                position: relative;
+                width: 100%;
+                height: 200px;
+            }
+            #img1{
+                position: absolute;
+                top: 0px;
+                right: 20%;
+                opacity: 0;
+            }
+            #img2{
+                position: absolute;
+                top: 0px;
+                right: 20%;
+                opacity: 0;
+            }
+            #img3{
+                position: absolute;
+                top: 0px;
+                right: 20%;
+                opacity: 1;
+            }
+            .img1{
+                position: fixed;
+                left: -18%;
+                bottom: 25%;
+            }
+            .img2{
+                position: fixed;
+                right: -18%;
+                bottom: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="globos">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+        <img src="cosas/cora.png" width="120px" alt="">
+    </div>
+    
+    <center><p><b class="will">will be you my valentine?</b><p class="escribir"></p></p>
+
+    <div id="div">
+        
+        <img id="img1" src="cosas/gif1.gif" width="200px" alt="Descripción del GIF">
+        <img id="img2" src="cosas/gif2.gif" width="200px" alt="Descripción del GIF">
+        <img id="img3" src="cosas/gif3.gif" width="200px" alt="Descripción del GIF">
+        
+    </div>
+    <img class="img1" src="cosas/ramo.png" width="220px" alt="">
+    <img class="img2" src="cosas/globos.png" width="220px" alt="">
+
+    
+    <p class="escribir2"></p>
+    <a href="sms:+529612384068?body=Hola, este es un mensaje automático"><button id="yes">Yes I want</button></a>
+    <button id="no">No</button>
+
+    </center>
+
+    <br>
+    <div class="corazones">
+        <img src="cosas/san1.png" width="200px" alt="">
+        <img src="cosas/san1.png" width="200px" alt="">
+        <img src="cosas/san1.png" width="200px" alt="">
+        <img src="cosas/san1.png" width="200px" alt="">
+        <img src="cosas/san1.png" width="200px" alt="">
+        <img src="cosas/san1.png" width="200px" alt="">
+        <img src="cosas/san1.png" width="200px" alt="">
+    </div>
+
+    
+
+    <script>
+        let heartInterval;
+
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.innerHTML = "❤️";
+            heart.classList.add("heart");
+
+            // Posición aleatoria en la pantalla
+            heart.style.left = Math.random() * window.innerWidth + "px";
+
+            // Tamaño aleatorio
+            let size = Math.random() * 40 + 30; // Entre 10px y 30px
+            heart.style.fontSize = size + "px";
+
+            // Duración aleatoria
+            let duration = Math.random() * 2 + 3; // Entre 3s y 5s
+            heart.style.animationDuration = duration + "s";
+
+            document.body.appendChild(heart);
+
+            // Eliminar el corazón cuando termine la animación
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
+        document.getElementById("yes").addEventListener("click", () => {
+            // Activar epilepsia de fondo
+            document.body.style.animation = "epilepsiaFondo 0.3s infinite alternate";
+
+            // Crear el mensaje animado si no existe
+            if (!document.querySelector(".mensaje")) {
+                const mensaje = document.createElement("div");
+                mensaje.classList.add("mensaje");
+                mensaje.textContent = "¡VIVA EL AMOR! 🎉";
+                document.body.appendChild(mensaje);
+                setTimeout(() => mensaje.remove(), 4000);
+                escribirTexto();
+            }
+
+            // Iniciar los corazones
+            heartInterval = setInterval(createHeart, 300);
+
+            // Detener epilepsia de fondo y corazones después de 3.5 segundos
+            setTimeout(() => {
+                document.body.style.animation = "none";
+                clearInterval(heartInterval);
+
+                // Eliminar corazones restantes en pantalla
+                document.querySelectorAll(".heart").forEach(heart => heart.remove());
+            }, 3500);
+        });
+
+
+        function cambiar() {
+            var btnyes = document.getElementById("yes");
+            var btnno = document.getElementById("no");
+
+            var img1 = document.getElementById("img1");
+            var img2 = document.getElementById("img2");
+            var img3 = document.getElementById("img3");
+
+            // Obtener el tamaño inicial
+            let yesWidth = btnyes.offsetWidth;
+            let yesHeight = btnyes.offsetHeight;
+            let noWidth = btnno.offsetWidth;
+            let noHeight = btnno.offsetHeight;
+
+            // Obtener tamaño inicial de fuente
+            let yesFontSize = parseFloat(window.getComputedStyle(btnyes).fontSize);
+            // let noFontSize = parseFloat(window.getComputedStyle(btnno).fontSize);
+
+            function ajustarTamanio() {
+                // Aumenta el tamaño del botón "Yes" y su fuente
+                yesWidth *= 1.1;
+                yesHeight *= 1.1;
+                yesFontSize *= 1.1;
+
+                // Disminuye el tamaño del botón "No" y su fuente
+                noWidth *= 0.9;
+                noHeight *= 0.9;
+                // noFontSize *= 0.9;
+
+                // Aplicar cambios
+                btnyes.style.width = yesWidth + "px";
+                btnyes.style.height = yesHeight + "px";
+                btnyes.style.fontSize = yesFontSize + "px";
+
+                btnno.style.width = noWidth + "px";
+                btnno.style.height = noHeight + "px";
+                // btnno.style.fontSize = noFontSize + "px";
+            }
+
+            
+            btnno.addEventListener("click", ajustarTamanio);
+
+
+            btnno.addEventListener("click", function(){
+                img3.style.opacity = "0";
+                img1.style.opacity = "1";
+            })
+
+            btnyes.addEventListener("click", function(){
+                img3.style.opacity = "0";
+                img1.style.opacity = "0";
+                img2.style.opacity = "1";
+                btnno.style.opacity = "0";
+                btnyes.style.opacity = "0";
+                
+            })
+
+
+        }
+
+        cambiar();
+
+        const texto = "San valentin juntitos!";
+        const texto2 = "¿Me das un Besito?";
+        let img2 = document.getElementById("img2");
+        const elemento = document.querySelector(".escribir");
+        const elemento3 = document.querySelector(".escribir2");
+        const elemento2 = document.querySelector(".will");
+        let i = 0;
+        let ii = 0;
+
+        
+
+        function escribirTexto() {
+               
+                elemento2.textContent = " ";
+                if (i < texto.length) {
+                elemento.textContent += texto.charAt(i);
+                i++;
+                setTimeout(escribirTexto, 100); // Velocidad de escritura
+                } else {
+                    elemento.style.borderRight = "none"; // Quitar cursor al terminar
+                }
+                setTimeout(() => {
+                    escribirtexto2(); 
+                }, 3000);
+                
+        }
+
+        function escribirtexto2(){
+            elemento3.style.opacity = "1";
+            if (ii < texto2.length) {
+            elemento3.textContent += texto2.charAt(ii);
+            ii++;
+            setTimeout(escribirTexto, 100); // Velocidad de escritura
+            } else {
+                elemento.style.borderRight = "none"; // Quitar cursor al terminar
+            }
+        }
+        
+
+
+
+        
+        
+        
+    </script>
+
+</body>
+</html>
+

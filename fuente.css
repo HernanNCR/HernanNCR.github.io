@@ -1,0 +1,9 @@
+@font-face {
+    font-family: san;
+    src: url(KissingSeason.ttf);
+
+}
+
+body{
+    font-family: san;
+}
