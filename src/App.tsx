@@ -92,7 +92,7 @@ function App() {
       <div className={style.body}>
         <div className={style.informacionPersonal}>
           <article className={style.fotoImage}>
-            <img src={presentacion} />
+            <img src={presentacion}/>
           </article>
           <b style={{ fontSize: "20px", margin : "5px" }}>
             DESARROLLADOR DE SOFTWARE Y PÁGINAS WEB
