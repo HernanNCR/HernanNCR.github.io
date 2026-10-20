@@ -92,12 +92,12 @@ function App() {
       <div className={style.body}>
         <div className={style.informacionPersonal}>
           <article className={style.fotoImage}>
-            <img src={presentacion} width="400" />
+            <img src={presentacion} />
           </article>
-          <b style={{ fontSize: "20px" }}>
+          <b style={{ fontSize: "20px", margin : "5px" }}>
             DESARROLLADOR DE SOFTWARE Y PÁGINAS WEB
           </b>
-          <p style={{ fontSize: "25px", margin: "30px 0px 0px 0px" }}>
+          <p style={{ fontSize: "25px", margin: "30px 5px 0px 5px" }}>
             HERNÁN NATANIEL CANCINO ROBLES
           </p>
           <p
@@ -204,7 +204,6 @@ function App() {
               <img src={gitIcon} className={style.imgTecnologias} />
               <img src={pdfkit} className={style.imgTecnologias} />
             </article>
-            <button>DESCARGAR MANUAL DE USUARIO</button>
             <button onClick={()=> setvista(0)} style={{background: "#a8a028", width: "200px", height:"35px", fontSize: "15px"}}>REGRESAR</button>
           </section>
         </div>
@@ -241,7 +240,6 @@ function App() {
               <img src={gitIcon} className={style.imgTecnologias} />
               <img src={socket} className={style.imgTecnologias} />
             </article>
-            <button>DESCARGAR MANUAL DE USUARIO</button>
             <button onClick={()=> setvista(0)} style={{background: "#a8a028", width: "200px", height:"35px", fontSize: "15px"}}>REGRESAR</button>
           </section>
         </div>

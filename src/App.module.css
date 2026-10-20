@@ -5,8 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F4F6F9;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #f4f6f9;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .informacionPersonal {
   width: 50%;
@@ -17,26 +17,26 @@
   align-items: center;
 }
 
-.informacionPersonal .fotoImage{
-    width: 400px;
-    height: 400px;
+.informacionPersonal .fotoImage {
+  width: 400px;
+  height: 400px;
 
-    border-radius: 50%;
-    margin: 30px;
-    overflow: hidden;
+  border-radius: 50%;
+  margin: 30px;
+  overflow: hidden;
 }
 
-.informacionPersonal section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.informacionPersonal section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.informacionPersonal section p{
-    margin: 100px 0px 0px 0px; 
-    font-size: 15px;
-    font-weight: 400;
+.informacionPersonal section p {
+  margin: 100px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .experiencias {
@@ -48,108 +48,108 @@
   align-items: center;
 }
 
-
-.paginasPersonales{
-    width: 62%;
-    height: 30%;
+.paginasPersonales {
+  width: 62%;
+  height: 30%;
 }
 
 .paginasPersonales button,
-.paginasPersonales a{
-    width: 400px;
-    height: 65px;
-    margin: 10px 0px;
+.paginasPersonales a {
+  width: 400px;
+  height: 65px;
+  margin: 10px 0px;
 }
 
-.seccionExperiencias{
-    width: 62%;
-    height: 60%;
+.seccionExperiencias {
+  width: 62%;
+  height: 60%;
 }
 
-.content_title_experiencias{
-    width: 95%;
+.content_title_experiencias {
+  width: 95%;
 }
 
-.seccionExperiencias button{
-    width: 450px;
-    height: 75px;
-    margin: 20px 0px;
+.seccionExperiencias button {
+  width: 450px;
+  height: 75px;
+  margin: 20px 0px;
 }
 
 .seccionExperiencias,
-.paginasPersonales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.paginasPersonales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .paginasPersonales .content_img,
-.seccionExperiencias .content_img{
-    width: 30%;
+.seccionExperiencias .content_img {
+  width: 30%;
 }
 
 .paginasPersonales .content_title,
-.seccionExperiencias .content_title{
-    width: 60%;
-    text-align: left;
+.seccionExperiencias .content_title {
+  width: 60%;
+  text-align: left;
 }
 
-button, a {
-    background-color: #2878A8;
-    border: none;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 600;
-    transition: .6s ease-in-out 0s;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button,
+a {
+  background-color: #2878a8;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.6s ease-in-out 0s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-a{
-    text-decoration: none;
-    color: black;
-    width: 400px;
-}
-
-button:hover, a:hover{
-    transform: scale(1.05);
-    transition: .4s ease-in-out 0s;
-    color: #F4F6F9;
-    box-shadow: 0px 0px 10px rgba(244, 246, 249, .3);
+a {
+  text-decoration: none;
+  color: black;
+  width: 400px;
 }
 
-button:active, a:active{
-    background-color: #17365d;
-    transition: 0s;
+button:hover,
+a:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out 0s;
+  color: #f4f6f9;
+  box-shadow: 0px 0px 10px rgba(244, 246, 249, 0.3);
 }
 
+button:active,
+a:active {
+  background-color: #17365d;
+  transition: 0s;
+}
 
 .icono {
-    color: inherit;
-    font-size: 35px;
-    margin-right: 10px;
-    transition: .4s ease-in-out 0s;
+  color: inherit;
+  font-size: 35px;
+  margin-right: 10px;
+  transition: 0.4s ease-in-out 0s;
 }
 
-#github{
-    background-color: black;
-    color: #F4F6F9;
-    transition: .6s ease-in-out 0s;
+#github {
+  background-color: black;
+  color: #f4f6f9;
+  transition: 0.6s ease-in-out 0s;
 }
-#github:hover{
-    background-color: #2878A8;
-    color: black;
-    transition: .4s ease-in-out 0s;
+#github:hover {
+  background-color: #2878a8;
+  color: black;
+  transition: 0.4s ease-in-out 0s;
 }
-
 
 .imagen {
   width: 700px;
   height: auto;
   object-fit: cover;
-  transition: opacity .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .visible {
@@ -160,9 +160,77 @@ button:active, a:active{
   opacity: 0;
 }
 
-.imgTecnologias{
-    width: 30px;
-    height: 30px;
-    margin: 5px;
+.imgTecnologias {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
 }
 
+@media (max-width: 480px) {
+  .body {
+    background-color: #17365d;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4f6f9;
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    flex-direction: column;
+  }
+  .informacionPersonal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .informacionPersonal .fotoImage {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    /* margin: 130px; */
+    overflow: hidden;
+  }
+  .informacionPersonal section p {
+    margin: 0px 0px 0px 0px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .informacionPersonal .fotoImage img,
+  .informacionPersonal section img {
+    width: 200px;
+  }
+  .experiencias {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .paginasPersonales button,
+  .paginasPersonales a {
+    width: 250px;
+    height: 45px;
+  }
+  .seccionExperiencias button {
+    width: 300px;
+    height: 55px;
+  }
+
+  button,
+  a {
+    font-size: 15px;
+  }
+  .imagen {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  background-color: red;
+  margin: 50px 5px 5px 5px;
+}
+}
