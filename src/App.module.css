@@ -113,14 +113,14 @@ a{
     width: 400px;
 }
 
-button:hover{
+button:hover, a:hover{
     transform: scale(1.05);
     transition: .4s ease-in-out 0s;
     color: #F4F6F9;
     box-shadow: 0px 0px 10px rgba(244, 246, 249, .3);
 }
 
-button:active{
+button:active, a:active{
     background-color: #17365d;
     transition: 0s;
 }
