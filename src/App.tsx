@@ -35,6 +35,7 @@ import socket from "./assets/socket.png"
 import html from "./assets/html.png"
 import css from "./assets/css.png"
 import js from "./assets/js.png"
+import mysql from "./assets/mysql.png";
 
 import { SiIndeed } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
@@ -203,6 +204,7 @@ function App() {
               <img src={nodeIcon} className={style.imgTecnologias} />
               <img src={gitIcon} className={style.imgTecnologias} />
               <img src={pdfkit} className={style.imgTecnologias} />
+              <img src={mysql} className={style.imgTecnologias} />
             </article>
             <button onClick={()=> setvista(0)} style={{background: "#a8a028", width: "200px", height:"35px", fontSize: "15px"}}>REGRESAR</button>
           </section>
@@ -239,6 +241,7 @@ function App() {
               <img src={nodeIcon} className={style.imgTecnologias} />
               <img src={gitIcon} className={style.imgTecnologias} />
               <img src={socket} className={style.imgTecnologias} />
+              
             </article>
             <button onClick={()=> setvista(0)} style={{background: "#a8a028", width: "200px", height:"35px", fontSize: "15px"}}>REGRESAR</button>
           </section>
